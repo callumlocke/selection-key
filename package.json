@@ -1,6 +1,6 @@
 {
   "name": "selection-key",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Convert an array of integers into a short, unique, URL-friendly key, and back again.",
   "main": "index.js",
   "scripts": {

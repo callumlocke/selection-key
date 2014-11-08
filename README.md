@@ -14,16 +14,13 @@ Useful if you need a key to represent a unique selection from a set of items –
 ```js
 var selectionKey = require('selection-key');
 
-var maxId = 200;
-var selectedItems = [123, 34, 52];
+var maxId = 100;
+var selectedItems = [5, 6, 20, 24, 25, 47, 48, 51, 55, 60, 61, 77, 88, 90, 91, 92, 96];
 
-var key = selectionKey(selectedItems, maxId); // 'asdyf9'
+var key = selectionKey(selectedItems, maxId); // 'O02C000P40.40BY00000'
 
-selectedItems === selectionKey.parse(key, maxId); // true
+var parsed = selectionKey.parse(key, maxId); // array of original items (sorted)
 ```
-
-The maxId is the maximum ID number possible. Make sure you pick something high enough, because all your keys will change later if you decide to raise this. But the higher the number, the longer the strings you'll get.
-
 
 
 ## Licence
